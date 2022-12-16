@@ -1,8 +1,90 @@
 * {
+  border: 1px dotted orange;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 :root {
   font-size: 62.5%;
+  --blue: #3882f6;
+  --semi-white: #f9faf8;
+  --grayish: #e5e7eb;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-height: 100vh;
+}
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: var(--semi-white);
+}
+header,
+footer,
+.hero {
+  background-color: #1f2937;
+  color: var(--semi-white);
+}
+.wide-box {
+  max-width: 50rem;
+  border: 1px dotted red;
+}
+.narrow-box {
+  max-width: 40rem;
+  border: 1px dotted red;
+}
+header {
+  padding: 2rem 0;
+  flex-grow: 0;
+}
+.nav {
+  display: flex;
+  gap: 1rem;
+  flex-grow: 1;
+  max-width: 50rem;
+}
+.hero {
+  flex-grow: 1;
+}
+.info {
+  flex-grow: 1;
+}
+.sign-up {
+  flex-grow: 1;
+}
+.call-action {
+  background-color: var(--blue);
+  border-radius: 0.5rem;
+  padding: 3rem 6rem;
+  flex: 0 1 50rem;
+  color: var(--semi-white);
+  flex-basis: 50rem; /* doesn't work */
+}
+.quote {
+  background-color: #e5e7eb;
+  font-style: italic;
+  font-size: 1.6rem;
+  color: #1f2937;
+  flex-grow: 1;
+}
+.quote-author {
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+}
+footer {
+  font-size: 1rem;
+  padding: 2rem;
+  text-align: center;
+  flex-grow: 0;
+}
+.logo {
+  margin-right: auto;
 }
