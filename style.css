@@ -1,5 +1,5 @@
 * {
-  border: 1px dotted orange;
+  /* border: 1px dotted orange; */
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -22,10 +22,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-a {
-  text-decoration: none;
-  color: var(--semi-white);
-}
 header,
 footer,
 .hero {
@@ -34,15 +30,20 @@ footer,
 }
 .wide-box {
   flex-basis: 50rem;
-  border: 1px dotted red;
+  /* border: 1px dotted red; */
 }
 .narrow-box {
   flex-basis: 40rem;
-  border: 1px dotted red;
+  /* border: 1px dotted red; */
 }
+/* ----------------------------- */
 header {
   padding: 2rem 0;
   flex-grow: 0;
+}
+a {
+  text-decoration: none;
+  color: var(--semi-white);
 }
 .nav {
   display: flex;
@@ -54,23 +55,93 @@ header {
 .logo {
   margin-right: auto;
 }
+/* ---------------------------- */
 .hero {
   flex-grow: 1;
 }
+.hero-container {
+  display: flex;
+}
+.hero-block {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 50%;
+}
+.hero-header {
+  color: var(--semi-white);
+  font-weight: 900;
+  font-size: 2.2rem;
+  padding-right: 3rem;
+}
+.hero-description {
+  color: var(--grayish);
+  margin-top: 0.3rem;
+  padding-right: 3rem;
+}
+.hero-button {
+  background-color: #3882f6;
+  border: none;
+  border-radius: 0.3rem;
+  color: var(--semi-white);
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 0.4rem 1.5rem;
+  margin-top: 0.5rem;
+}
+/* ----------------------------- */
 .info {
   flex-grow: 1;
 }
+.info-header {
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.info__card-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.info-card-image {
+  border: 2px solid #3882f6;
+  border-radius: 0.5rem;
+}
+.info-card {
+  width: min-content;
+  text-align: center;
+  color: #1f2937;
+}
+/* ----------------------------- */
 .sign-up {
   flex-grow: 1;
 }
+/* ----------------------------- */
 .call-action {
   background-color: var(--blue);
   border-radius: 0.5rem;
-  padding: 3rem 6rem;
-  flex: 0 1 50rem;
+  padding: 2rem 6rem;
   color: var(--semi-white);
-  flex-basis: 50rem; /* doesn't work */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+.call-action__header {
+  font-weight: 700;
+}
+.call-action__description {
+  font-size: 0.8rem;
+}
+.call-action__button {
+  border-radius: 0.3rem;
+  background-color: transparent;
+  border: 1px solid var(--semi-white);
+  color: var(--semi-white);
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 0.4rem 1.5rem;
+}
+/* ----------------------------- */
 .quote {
   background-color: #e5e7eb;
   font-style: italic;
@@ -83,6 +154,7 @@ header {
   font-weight: bold;
   text-align: right;
 }
+/* ----------------------------- */
 footer {
   font-size: 1rem;
   padding: 2rem;
