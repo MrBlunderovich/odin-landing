@@ -17,7 +17,7 @@ body {
   align-items: stretch;
   min-height: 100vh;
 }
-.section {
+.page-section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,11 +33,11 @@ footer,
   color: var(--semi-white);
 }
 .wide-box {
-  max-width: 50rem;
+  flex-basis: 50rem;
   border: 1px dotted red;
 }
 .narrow-box {
-  max-width: 40rem;
+  flex-basis: 40rem;
   border: 1px dotted red;
 }
 header {
@@ -46,9 +46,13 @@ header {
 }
 .nav {
   display: flex;
+  align-items: center;
   gap: 1rem;
   flex-grow: 1;
   max-width: 50rem;
+}
+.logo {
+  margin-right: auto;
 }
 .hero {
   flex-grow: 1;
@@ -84,7 +88,4 @@ footer {
   padding: 2rem;
   text-align: center;
   flex-grow: 0;
-}
-.logo {
-  margin-right: auto;
 }
